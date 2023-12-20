@@ -8,7 +8,7 @@ a {
   background: #000;
 }
 
-.container {
+.col {
   background-image: url(../src/img/header/div.tn-atom.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -17,6 +17,7 @@ a {
 }
 .header__row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -50,9 +51,9 @@ a {
 .header__adres {
   color: #fff;
   font-family: Stapel;
-  font-size: 15.25px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 19px; /* 124.59% */
 }
 
@@ -66,11 +67,11 @@ a {
   -o-border-radius: 0;
 }
 
-.header__call {
+.header__contact {
   display: flex;
   justify-content: end;
   flex-wrap: wrap;
-  align-items: end;
+  align-items: center;
   max-width: 250px;
 }
 .header__telegram-icon {
@@ -91,10 +92,56 @@ a {
 }
 .times-works {
   color: #fff;
-
+  font-family: Stapel, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 17px; /* 124.343% */
+}
+.header__text-box {
+  margin-top: 105px;
+  max-width: 543px;
+}
+.header__text {
+  color: #fff;
   font-family: Stapel;
-  font-size: 13.672px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 400;
-  line-height: 17px; /* 124.343% */
+  line-height: 77px; /* 121.022% */
+}
+.header__btn-big {
+  height: 66px;
+  padding: 25px 42px 0px 42px;
+  background: #fff;
+  color: #000;
+  font-family: Stapel;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+    letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  margin-right: 21px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.header__btn-big:hover{
+  background: #000;
+  color:#ffff;
+}
+.header__btn-black {
+  width: 173px;
+  height: 66px;
+  padding: 18px 43px 0px 43px;
+
+  border: 1px solid #fff;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
