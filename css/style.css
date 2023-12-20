@@ -1,6 +1,9 @@
 .none {
   display: none;
 }
+a {
+  text-decoration: none;
+}
 .header {
   background: #000;
 }
@@ -20,29 +23,37 @@
 .header__logo-box {
 }
 .logo {
-  margin-bottom: 13px;
+  margin-bottom: 5px;
+  /* width: 227px;
+  height: 15px; */
+  font-family: Stapel;
+  text-transform: uppercase;
+  font-size: medium;
+  color: #fff;
+  line-height: 17px; /* 123.356% */
+  letter-spacing: 15.5px;
+  -moz-text-decoration-line: ;
 }
 .logo-text {
-  color: #FFF;
-font-family: Stapel;
-font-size: 13.781px;
-font-style: normal;
-font-weight: 400;
-line-height: 17px; /* 123.356% */
-letter-spacing: 2.4px;
+  color: #fff;
+  font-family: Stapel, Arial, sans-serif;
+  font-size: 14px;
+  font-style: medium;
+  font-weight: 300;
+  line-height: 17px; /* 123.356% */
+  letter-spacing: 2.4px;
 }
-.header__adres-box{
+.header__adres-box {
   display: flex;
   gap: 56px;
-  
 }
 .header__adres {
-  color: #FFF;
-font-family: Stapel;
-font-size: 15.25px;
-font-style: normal;
-font-weight: 400;
-line-height: 19px; /* 124.59% */
+  color: #fff;
+  font-family: Stapel;
+  font-size: 15.25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; /* 124.59% */
 }
 
 .header__btn {
@@ -59,34 +70,31 @@ line-height: 19px; /* 124.59% */
   display: flex;
   justify-content: end;
   flex-wrap: wrap;
-  align-items: end;;
+  align-items: end;
   max-width: 250px;
-  
-
 }
 .header__telegram-icon {
   margin-right: 7px;
 }
 .header__vk-icon {
-  background-color: #FFF;
-  border-radius:50px 50px;
-  -webkit-border-radius:50px 50px;
-  -moz-border-radius:50px 50px;
-  -ms-border-radius:50px 50px;
-  -o-border-radius:50px 50px;
+  background-color: #fff;
+  border-radius: 50px 50px;
+  -webkit-border-radius: 50px 50px;
+  -moz-border-radius: 50px 50px;
+  -ms-border-radius: 50px 50px;
+  -o-border-radius: 50px 50px;
   margin-right: 15px;
 }
 .phone-link {
   margin-bottom: 10px;
-  color: #FFF;
+  color: #fff;
 }
 .times-works {
-  
-  color: #FFF;
+  color: #fff;
 
-font-family: Stapel;
-font-size: 13.672px;
-font-style: normal;
-font-weight: 400;
-line-height: 17px; /* 124.343% */
+  font-family: Stapel;
+  font-size: 13.672px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px; /* 124.343% */
 }
