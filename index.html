@@ -15,9 +15,9 @@
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container header__container">
       <div class="row">
-        <div class="col">
+        <div class="col-12">
           <div class="header__row">
             <div class="header__logo-box">
               <a href="#footer">
@@ -29,7 +29,7 @@
               <p class="header__adres">Несвиж <br>ул Дзержинского 52</p>
 
 
-              <a class="btn header__btn btn-outline-light" href="#footer__contatc" role="button">Как добраться</a>
+              <a class="btn header__btn btn-outline-light" href="#map" role="button">как добраться</a>
             </div>
             <div class="header__contact">
               <a class="header__telegram-link" href="tg://resolve?domain=@Beza_diana">
@@ -46,21 +46,93 @@
             <p class="header__text">Стрижка + моделирование бороды</p>
 
           </div>
-          <a class="btn header__btn-big btn-outline-light" href="!#" role="button">Выбрать свободное время</a>
-          <a class="btn header__btn-black btn-outline-light" href="!#" role="button">Все услуги</a>
+          <a class="btn header__btn-big btn-lg btn-outline-light" href="!#" role="button">выбрать свободное время</a>
+          <a class="btn header__btn-black btn-outline-light" href="!#" role="button">все услуги</a>
         </div>
       </div>
     </div>
   </header>
-
+  
   <main>
+    <section class="clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="clients__title text-white">Учитываем особенности
+              каждого клиента</h2>
+          </div>
+          <div class="col-4">
+            <img src="./src/img/Clients/1.png" class="img-fluid" alt="boy-1">
+          </div>
+          <div class="col-4">
+            <img src="./src/img/Clients/2.png" class="img-fluid" alt="boy-2">
+          </div>
+          <div class="col-4">
+            <img src="./src/img/Clients/3.png" class="img-fluid" alt="boy-3">
+          </div>
+          <button type="button"  data-bs-toggle="modal" href="#exampleModalToggle" class="btn btn-primary btn__clients ">Онлайн
+            запись</button>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Модалка 1</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          Покажите второе модальное окно и скройте его с помощью кнопки ниже.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Открыть второе модальное окно</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Модалка 2</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          Скройте это модальное окно и покажите первое с помощью кнопки ниже.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Вернуться к первому</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Открыть первое модальное окно</a> -->
+        </div>
+      </div>
+    </section>
+    <section class="our__service">
+  <div class="container">
+    <row>
+      <col-12><div class="h2 our__service-title">Наши услуги</div></col-12>
+      <col-6>
+      <ul class="list-group">
+        <li class="list-group-item bg-black text-white">Стрижки</li>
+        <li class="list-group-item bg-black text-white">Мужская стрижка</li>
+        <li class="list-group-item bg-black text-white">Стрижка машинкой</li>
+        <li class="list-group-item bg-black text-white">Четвертый элемент</li>
+        <li class="list-group-item bg-black text-white">Детская стрижка</li>
+      </ul>
+    </col-6>
+      <col-6></col-6>
+      <col-12></col-12>
+    </row>
+  </div>
+    </section>
 
   </main>
   <footer class="footer">
     <div class="container">
       <div class="footer__contacts">
         <h2>Котакты</h2>
-        <p>Как добраться</p>
+        <p id="map">Как добраться</p>
         <script type="text/javascript" charset="utf-8" async
           src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1eca8d8c0fcf816637ddcb7e0f17bd0131abf36160ff8e30feffb5ba2706cb36&amp;width=100%25&amp;height=616&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>

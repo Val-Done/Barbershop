@@ -4,17 +4,20 @@
 a {
   text-decoration: none;
 }
-.header {
+body {
   background: #000;
 }
-
-.col {
+.header {
+}
+.header__container {
   background-image: url(../src/img/header/div.tn-atom.jpg);
-  background-size: 100%;
+
+  background-size: ;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 52px 120px 0px;
 }
+
 .header__row {
   display: flex;
   flex-wrap: wrap;
@@ -33,7 +36,6 @@ a {
   color: #fff;
   line-height: 17px; /* 123.356% */
   letter-spacing: 15.5px;
-  -moz-text-decoration-line: ;
 }
 .logo-text {
   color: #fff;
@@ -71,7 +73,6 @@ a {
   display: flex;
   justify-content: end;
   flex-wrap: wrap;
-  align-items: center;
   max-width: 250px;
 }
 .header__telegram-icon {
@@ -109,6 +110,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 77px; /* 121.022% */
+  margin-bottom: 146px;
 }
 .header__btn-big {
   height: 66px;
@@ -120,7 +122,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 14px;
-    letter-spacing: 1px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
   margin-right: 21px;
@@ -129,12 +131,12 @@ a {
   -ms-border-radius: 0;
   -o-border-radius: 0;
 }
-.header__btn-big:hover{
+.header__btn-big:hover {
   background: #000;
-  color:#ffff;
+  color: #ffff;
 }
 .header__btn-black {
-  width: 173px;
+  max-width: 173px;
   height: 66px;
   padding: 18px 43px 0px 43px;
 
@@ -144,4 +146,68 @@ a {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
+}
+
+/** Стили для секции Клиент* */
+
+.clients__title {
+  max-width: 620px;
+  height: 104px;
+  margin: 42px 0 14px;
+  font-family: Stapel;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px; /* 101.186% */
+}
+.text-white {
+}
+.col-4 {
+}
+.img-fluid {
+}
+
+/* *Анимация пульсирующей кнопки* */
+.btn__clients {
+  border-radius: 61px;
+  border: 2px solid #1c84c6;
+  opacity: 0.9;
+
+  width: 100px !important;
+  height: 100px !important;
+  box-sizing: border-box !important;
+
+  position: fixed !important;
+  right: 5% !important;
+  bottom: 10% !important;
+  z-index: 1000;
+}
+.btn__clients::before,
+.btn__clients::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #29aee3;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: btn__clients 1.8s linear infinite;
+  -webkit-animation: btn__clients 1.8s linear infinite;
+}
+.btn__clients::after {
+  animation-delay: 0.5s;
+}
+@keyframes btn__clients {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
 }
