@@ -17,24 +17,27 @@
   <header class="header">
     <div class="container header__container">
       <div class="row">
-        <div class="col-12">
-          <div class="header__row">
+        <div class="header__row">
+
+          <div class="col-xl-4 col-md-6 col-sm-12">
             <div class="header__logo-box">
               <a href="#footer">
-                <p class="logo">BlackDome</p>
+                <p class="logo">BlackDom</p>
               </a>
-              <p class="logo-text">Мужская парикмахерская</p>
+              <h1 class="logo-text">Мужская парикмахерская</h1>
             </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6 col-sm-12">
             <div class="header__adres-box">
               <p class="header__adres">Несвиж <br>ул Дзержинского 52</p>
-
-
               <a class="btn header__btn btn-outline-light" href="#map" role="button">как добраться</a>
             </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
             <div class="header__contact">
               <a class="header__telegram-link" href="tg://resolve?domain=@Beza_diana">
                 <img class="header__telegram-icon" src="./src/img/header/telegram.svg" alt="telegram"></a>
-
               <a href="https://vk.com/dianabeza">
                 <img class="header__vk-icon" src="./src/img/header/vk.svg" alt="vk">
               </a>
@@ -42,89 +45,161 @@
               <p class="times-works">Пн-Вс 10:00—21:00</p>
             </div>
           </div>
+        </div>
+
+        <div class="row">
           <div class="header__text-box">
             <p class="header__text">Стрижка + моделирование бороды</p>
-
           </div>
-          <a class="btn header__btn-big btn-lg btn-outline-light" href="!#" role="button">выбрать свободное время</a>
+        </div>
+        <div class="row">
+          <a class="btn header__btn-big btn-lg btn-outline-light mb-md-4 mb-sm-4" href="!#" role="button">выбрать свободное время</a>
           <a class="btn header__btn-black btn-outline-light" href="!#" role="button">все услуги</a>
+
         </div>
       </div>
     </div>
   </header>
-  
+
   <main>
     <section class="clients">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="clients__title text-white">Учитываем особенности
-              каждого клиента</h2>
+            <h2 class="clients__title fs-2 text-white">Учитываем особенности каждого клиента</h2>
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-md-4 mb-sm-4">
             <img src="./src/img/Clients/1.png" class="img-fluid" alt="boy-1">
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-sm-4">
             <img src="./src/img/Clients/2.png" class="img-fluid" alt="boy-2">
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-sm-4">
             <img src="./src/img/Clients/3.png" class="img-fluid" alt="boy-3">
           </div>
-          <button type="button"  data-bs-toggle="modal" href="#exampleModalToggle" class="btn btn-primary btn__clients ">Онлайн
+          <button type="button" data-bs-toggle="modal" href="#exampleModalToggle"
+            class="btn btn-primary btn__clients ">Онлайн
             запись</button>
-            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Модалка 1</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-        </div>
-        <div class="modal-body">
-          Покажите второе модальное окно и скройте его с помощью кнопки ниже.
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Открыть второе модальное окно</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Модалка 2</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-        </div>
-        <div class="modal-body">
-          Скройте это модальное окно и покажите первое с помощью кнопки ниже.
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Вернуться к первому</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Открыть первое модальное окно</a> -->
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header flex-column">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Свободный специалист</h1>
+                  <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Старший Барбер</h5>
+                      <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+                      
+                    </div>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                  Покажите второе модальное окно и скройте его с помощью кнопки ниже.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Далее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Модалка 2</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                  Скройте это модальное окно и покажите первое с помощью кнопки ниже.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Вернуться
+                    к первому</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Открыть первое модальное окно</a> -->
         </div>
       </div>
     </section>
-    <section class="our__service">
-  <div class="container">
-    <row>
-      <col-12><div class="h2 our__service-title">Наши услуги</div></col-12>
-      <col-6>
-      <ul class="list-group">
-        <li class="list-group-item bg-black text-white">Стрижки</li>
-        <li class="list-group-item bg-black text-white">Мужская стрижка</li>
-        <li class="list-group-item bg-black text-white">Стрижка машинкой</li>
-        <li class="list-group-item bg-black text-white">Четвертый элемент</li>
-        <li class="list-group-item bg-black text-white">Детская стрижка</li>
-      </ul>
-    </col-6>
-      <col-6></col-6>
-      <col-12></col-12>
-    </row>
-  </div>
+    <section class="our__service mb-5">
+      <div class="container">
+        <row>
+          <col-12>
+            <div class="h2 service__title">Наши услуги</div>
+          </col-12>
+          <div class="service__wrapper-item">
+          <div class="service__item-top w-auto col-xl-6 col-md-6 col-sm-12">
+            <ul class="list-group w-50 p-3 service__item">
+              <li class="list-group-item list-group-title bg-black text-white">Стрижки</li>
+              <li class="list-group-item bg-black text-white">Мужская стрижка 15р</li>
+              <li class="list-group-item bg-black text-white">Стрижка машинкой</li>
+              <li class="list-group-item bg-black text-white">Четвертый элемент</li>
+              <li class="list-group-item bg-black text-white">Детская стрижка</li>
+            </ul>
+            <ul class="list-group w-50 p-3 service__item">
+              <li class="list-group-item list-group-title bg-black text-white">Окрашивание волос</li>
+              <li class="list-group-item bg-black text-white">Окрашивание волос (длинные)</li>
+              <li class="list-group-item bg-black text-white">Окрашивание волос (средние)</li>
+              <li class="list-group-item bg-black text-white">Окрашивание волос (короткие)</li>
+            </ul>
+          </div>
+          <div class="service__item-bottom w-auto col-xxl-6 col-md-6 col-sm-12">
+            <ul class="list-group w-50 p-3  service__item">
+              <li class="list-group-item list-group-title bg-black text-white">Моделирование бороды</li>
+              <li class="list-group-item bg-black text-white">Борода и бритье (барбер/старший барбер)</li>
+              <li class="list-group-item list-group-title bg-black text-white">Бритье лица</li>
+              <li class="list-group-item bg-black text-white">Сухое бритье</li>
+              <li class="list-group-item bg-black text-white">Камуфляж бороды</li>
+              <li class="list-group-item bg-black text-white">Камуфляж головы</li>
+            </ul>
+            <ul class="list-group w-50 p-3 service__item">
+              <li class="list-group-item list-group-title bg-black text-white">Дополнительные услуги</li>
+              <li class="list-group-item bg-black text-white">Коррекция воском</li>
+              <li class="list-group-item bg-black text-white">Окантовка</li>
+              <li class="list-group-item bg-black text-white">Уход для лица Volcano</li>
+              <li class="list-group-item bg-black text-white">Патчи</li>
+              <li class="list-group-item bg-black text-white">Коррекция бровей</li>
+              <li class="list-group-item bg-black text-white">Уход для кожи головы Luxina</li>
+            </ul>
+          </div>
+        </div>
+          <col-12></col-12>
+        </row>
+      </div>
+    </section>
+    <section class="call__us">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="badge bg-black border border-white mb-5 ps-5 pt-3 w-100 rounded-0 text-wrap">
+              <h2 class="text-start mb-4">Запишитесь на стрижку в один клик</h2>
+              <p class="text-start fs-5 mb-4">Или позвоните нам по телефону: 8 (812) 920-13-82</p>
+              <button class="call__us-btn btn  btn-outline-light  btn-light  rounded-0 text-dark mb-4 d-md-flex text-center pt-2 pb-2 ps-5 pe-5 fs-6 align-items-center justify-content-start" data-bs-toggle="modal"  href="#exampleModalToggle">записаться</button>  
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 col-xl-3 col-md-6 col-sm-12">
+            <img src="/src/img/call__us/1.jpg.png" class="img-fluid mb-md-4 mb-sm-4" alt="pic-1">
+          </div>
+          <div class="col-3 col-xl-3 col-md-6 col-sm-12">
+            <img src="/src/img/call__us/2.jpg.png" class="img-fluid mb-sm-4" alt="pic-2">
+          </div>
+          <div class="col-3 col-xl-3 col-md-6 col-sm-12">
+            <img src="/src/img/call__us/3.jpg.png" class="img-fluid mb-md-4 mb-sm-4" alt="pic-3">
+          </div>
+          <div class="col-3 col-xl-3 col-md-6 col-sm-12">
+            <img src="/src/img/call__us/4.jpg.png" class="img-fluid" alt="pic-4">
+          </div>
+        </div>
+      </div>
+
     </section>
 
   </main>
